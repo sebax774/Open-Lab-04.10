@@ -6,7 +6,12 @@ namespace Open_Lab_04._10
     {
         public float Average(int[] nums)
         {
-            throw new NotImplementedException();
+            float f = 0;
+            foreach (var v in nums)
+            {
+                f += v;
+            }
+            return f / nums.Length;
         }
     }
 }
